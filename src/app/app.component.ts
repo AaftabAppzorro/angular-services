@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+import { TasksComponent } from './tasks/tasks.component';
+// import { LoggingService } from './logging.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [TasksComponent],
+  // providers: [LoggingService]
 })
 export class AppComponent {
-  title = 'angular-services';
 }
